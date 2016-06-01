@@ -1,1 +1,1 @@
-# userscripts
+A collection of miscellaneous userscripts.
