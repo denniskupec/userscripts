@@ -13,7 +13,7 @@
 
 	var location = window.location.pathname.split('/');
 
-	if (location[1].match(/^3(\.?[0-9])?$/) === null) {
+	if ((parseFloat(location[1]) - 3) < 0)  {
 		
 		location[1] = '3';
 
