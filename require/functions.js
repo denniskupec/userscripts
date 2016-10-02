@@ -11,6 +11,20 @@ function isInt(i) {
 }
 
 
+/* element visibility check */
+function isElementVisible(el)
+{
+	let rect = el.getBoundingClientRect();
+    let efp = (x, y) => document.elementFromPoint(x, y);     
+
+    if (rect.right < 0 || rect.bottom < 0 || rect.left > window.innerWidth || rect.top > window.innerHeight) {
+		return false;
+	}
+
+	return (el.contains(efp(rect.left, rect.top)) || el.contains(efp(rect.right, rect.top)) || el.contains(efp(rect.right, rect.bottom)) || el.contains(efp(rect.left, rect.bottom)));
+}
+
+
 /* pad strings */
 function pad(input, width, padding)
 {
