@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name			Humblebundle Downloader
+// @name		Humblebundle Downloader
 // @namespace		https://github.com/denniskupec
-// @version			1
-// @author			Dennis Kupec <denniskupec@gmail.com>
-// @match			https://www.humblebundle.com/downloads*
-// @grant			GM_download
-// @connect			*.humble.com
+// @version		1
+// @author		Dennis Kupec <denniskupec@gmail.com>
+// @match		https://www.humblebundle.com/downloads*
+// @grant		GM_download
+// @connect		*.humble.com
 // @nocompat		Chrome
 // @noframes
 // ==/UserScript==
