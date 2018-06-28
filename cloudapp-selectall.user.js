@@ -11,6 +11,6 @@
 
 GM_registerMenuCommand(
 	'select-all',
-	() => document.querySelectorAll('.ItemsList input[type="checkbox"]').forEach((e) => e.checked = !e.checked),
+	() => document.querySelectorAll('.ItemsList input[type="checkbox"]').forEach((e) => e.click()),
 	'a'
 );
