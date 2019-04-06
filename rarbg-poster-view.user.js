@@ -2,7 +2,7 @@
 // @name             Rarbg Poster View
 // @description      Adds poster images to the torrent list
 // @namespace        https://baud.nu
-// @version          1
+// @version          2
 // @author           Dennis Kupec
 //
 // @match            https://rarbg.to/torrents.php*
@@ -22,7 +22,7 @@ function show_poster(e) {
 		return
 	}
 
-	let poster = lista[1].children[0].getAttribute('onmouseover').match(/(https?:\/\/.*\/\d+\/\w+\.jpg)/g)[0]
+	let poster = lista[1].children[0].getAttribute('onmouseover').match(/(https?:\/\/.*\/\w+\.jpg)/g)[0]
 
-	lista[0].getElementsByTagName('img')[0].src = poster
+	lista[0].innerHTML = `<img src="${poster}" style="max-width:20em">`
 }
