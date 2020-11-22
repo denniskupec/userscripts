@@ -28,9 +28,11 @@ window.setTimeout(function(){
                 item_id = el.querySelector('.item-title');
       
             if (!btn || !item_id) {
-                return;
+                return
             }
-          
+
+            item_id = item_id.href.match(/(N[A-Z0-9]{14})/)
+
             if (btn.innerText.includes('ADD TO CART')) {
                 console.info(`${item_id[1]}: ✅ CARD IN STOCK ✅`)
                 console.info(`https://secure.newegg.com/Shopping/AddtoCart.aspx?Submit=ADD&ItemList=${item_id[1]}`)
